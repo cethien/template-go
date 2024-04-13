@@ -2,12 +2,10 @@
 # vim: set ts=2 sw=2 tw=0 fo=cnqoj
 
 version: 1
-project_name: app
+project_name: template
 before:
     hooks:
         - go mod tidy
-        - bun install
-        - bun run build
 
 builds:
     - binary: "{{ .ProjectName }}"

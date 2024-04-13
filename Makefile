@@ -1,7 +1,7 @@
-APP_NAME=app
+APP_NAME=$(shell cat .app_name)
 BINARY=tmp/$(APP_NAME)
 DEBUG=false
-VERSION=v$(shell cat .version)
+TAG=v$(shell cat .version)
 
 .PHONY: default
 default: clean
@@ -39,9 +39,9 @@ snapshot:
 
 .PHONY: git-tag
 tag:
-	@git tag -f -a $(VERSION) -m "Release $(VERSION)"
+	@git tag -f -a $(TAG) -m "Release $(TAG)"
 
 .PHONY: push-git-tag
 git-push-tag:
-	@git push origin $(VERSION)
+	@git push origin $(TAG)
 
