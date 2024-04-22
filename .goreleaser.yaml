@@ -9,7 +9,6 @@ before:
 
 builds:
     - binary: "{{ .ProjectName }}"
-      main: "cmd/{{ .ProjectName }}/main.go"
       env:
           - CGO_ENABLED=0
       goos:
