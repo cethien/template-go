@@ -8,6 +8,7 @@ default: clean install-tools build
 .PHONY: clean
 clean:
 	@rm -rf dist/ tmp/ node_modules/
+	@find . -type d -empty -delete
 
 .PHONY: download
 download:
