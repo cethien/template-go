@@ -1,4 +1,4 @@
-package templatego
+package application
 
 import (
 	_ "embed"
