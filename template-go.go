@@ -5,16 +5,23 @@ import (
 )
 
 type meta struct {
-	Name      string
-	Copyright string
-	Version   string
+	name      string
+	version   string
+}
+
+func (m *meta) Name() string {
+	returb m.name
+}
+
+func (m *meta) Version() string {
+	returb m.Version
 }
 
 //go:embed .version
 var version string
 
 var m = &meta{
-	Version:   version,
+	version:   version,
 }
 
 func Meta() *meta {
