@@ -10,11 +10,11 @@ type meta struct {
 }
 
 func (m *meta) Name() string {
-	returb m.name
+	return m.name
 }
 
 func (m *meta) Version() string {
-	returb m.Version
+	return m.version
 }
 
 //go:embed .version
