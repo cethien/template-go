@@ -4,10 +4,19 @@ import (
 	_ "embed"
 )
 
+type meta struct {
+	Name      string
+	Copyright string
+	Version   string
+}
+
 //go:embed .version
 var version string
 
-// Version number defined in .version file
-func Version() string {
-	return version
+var m = &meta{
+	Version:   version,
+}
+
+func Meta() *meta {
+	return m
 }
