@@ -4,7 +4,7 @@ go 1.22.1
 
 require (
 	github.com/bokwoon95/wgo v0.5.6
-	github.com/evilmartians/lefthook v1.6.18
+	github.com/evilmartians/lefthook v1.7.5
 	github.com/goreleaser/goreleaser/v2 v2.0.1
 	honnef.co/go/tools v0.4.7
 )
