@@ -5,7 +5,7 @@ toolchain go1.22.5
 
 require (
 	github.com/bokwoon95/wgo v0.5.6
-	github.com/evilmartians/lefthook v1.7.11
+	github.com/evilmartians/lefthook v1.7.12
 	github.com/goreleaser/goreleaser/v2 v2.1.0
 	honnef.co/go/tools v0.4.7
 )
