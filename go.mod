@@ -1,11 +1,11 @@
 module github.com/cethien/template-go
 
 go 1.22.1
-toolchain go1.22.5
+toolchain go1.23.2
 
 require (
 	github.com/bokwoon95/wgo v0.5.6
-	github.com/evilmartians/lefthook v1.7.22
+	github.com/evilmartians/lefthook v1.8.1
 	github.com/goreleaser/goreleaser/v2 v2.1.0
 	honnef.co/go/tools v0.5.1
 )
