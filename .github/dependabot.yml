@@ -14,6 +14,11 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    ignore:
+      - github.com/bokwoon95/wgo
+      - github.com/evilmartians/lefthook
+      - github.com/goreleaser/goreleaser/v2
+      - honnef.co/go/tools/cmd/staticcheck
 
   - package-ecosystem: "npm"
     target-branch: "main"
