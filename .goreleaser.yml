@@ -46,5 +46,5 @@ changelog:
 
 dockers:
   - image_templates:
-      - 'ghcr.io/cethien/{{ .ProjectName }}:latest'
-      - 'ghcr.io/cethien/{{ .ProjectName }}:{{ .Tag }}'
+      - 'ghcr.io/owner/{{ .ProjectName }}:latest'
+      - 'ghcr.io/owner/{{ .ProjectName }}:{{ .Tag }}'
