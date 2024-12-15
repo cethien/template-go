@@ -19,7 +19,9 @@
           echo "use flake" >> .envrc && direnv allow          
         fi
         
-        make
+        if [ ! -d node_modules ] || [ ! -d tmp ]; then
+          make
+        fi
       '';
     };
   };
